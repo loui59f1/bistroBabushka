@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bistro Babushka</title>
+	<link rel="stylesheet" href="">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800;900&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Bistro Babushka</h1>
+		<h2>Menu</h2>
+	</header>
+
+	<nav>
+		<button class="filter active" data-kategori="alle">Alle</button>
+		<button class="filter" data-kategori="forretter">Forretter</button>
+		<button class="filter" data-kategori="hovedretter">Hovedretter</button>
+		<button class="filter" data-kategori="desserter">Desserter</button>
+		<button class="filter" data-kategori="drikkevarer">Drikkevarer</button>
+	</nav>
+	<h2 class="heading">Alle</h2>
+	<section id="liste"></section>
+
+	<footer>
+		<div class="container">
+			<div class="sm_column">
+				<img src="logo_footer.jpg" alt="">
+			</div>
+			<div class="sm_column">
+				<h3>Adresse:</h3>
+				<p>Grønnegade 97</p>
+				<p>2300, København S</p>
+			</div>
+			<div class="sm_column align_right">
+				<h3>Åbningstider: </h3>
+				<p>Mandag til torsdag: 12.00 - 21.00</p>
+				<p>Fredag til søndag: 12.00 - 23.00</p>
+			</div>
+		</div>
+	</footer>
+
+	<template>
+		<article>
+			<h2></h2>
+			<img src="" alt="">
+			<p class="kort"></p>
+			<p class="oprindelse"></p>
+			<p class="pris"></p>
+		</article>
+	</template>
+
+
+	<section id="modal">
+		<article>
+			<div id="close">x</div>
+			<div class="column img">
+				<img src="" alt="">
+			</div>
+			<div class="column">
+				<h2></h2>
+				<p><span class="lang"></span></p>
+				<p>Oprindelse: <span class="oprindelse"></span></p>
+				<p>Pris: <span class="pris"></span></p>
+			</div>
+		</article>
+	</section>
+
+	<script src="script.js"></script>
+
+</body>
+
+</html>
